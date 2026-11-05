@@ -1,0 +1,9 @@
+Options -Indexes
+<IfModule mod_mime.c>
+  AddType application/wasm .wasm
+  AddType text/javascript .js
+</IfModule>
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "no-referrer"
+</IfModule>
